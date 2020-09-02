@@ -17,7 +17,7 @@ const T = new Twit({
 
 function retweet() {
   let params = {
-    q: "#RwOT",
+    q: `#dailyInspiration OR #RwOT OR #StaySafe`,
     count: 15,
   };
   T.get("search/tweets", params, (err, data, response) => {
