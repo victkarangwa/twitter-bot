@@ -17,7 +17,7 @@ const T = new Twit({
 
 function retweet() {
   let params = {
-    q: `#dailyInspirations OR #StaySafe`,
+    q: `#dailyInspirations OR #100DaysOfCode OR #StaySafe`,
     count: 15,
   };
   T.get("search/tweets", params, (err, data, response) => {
@@ -38,3 +38,4 @@ function retweet() {
   }); 
 }
 setInterval(retweet, 10000);
+
